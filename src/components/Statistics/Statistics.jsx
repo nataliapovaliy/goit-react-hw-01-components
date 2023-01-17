@@ -1,16 +1,22 @@
-// import css from './Statistics.module.css';
-// import PropTypes from 'prop-types';
+import css from './Statistics.module.css';
+import PropTypes from 'prop-types';
+import { StatList } from './StatList';
 
-// export default function Statistics() {
-    
-// }
+export default function Statistics({title, stats}) {
+    return (
+        <>
+        <section className={css.statistics}>
+                <h2 className={css.title}>{title}</h2>
+                
+                {<StatList stats={stats}/>}
+        </section>
+        </>
+    )
+}
 
-// Profile.propTypes = {
-//     user: PropTypes.shape({
-//         username: PropTypes.string.isRequired,
-//         tag: PropTypes.string.isRequired,
-//         location: PropTypes.string.isRequired,
-//         avatar: PropTypes.string.isRequired,
+// Statistics.propTypes = {
+//     data: PropTypes.shape({
+//         title: PropTypes.string.isRequired,
 //         stats: PropTypes.string.isRequired,
 //     }).isRequired
 // };
