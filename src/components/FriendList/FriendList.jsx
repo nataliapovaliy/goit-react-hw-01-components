@@ -10,6 +10,7 @@ export default function FriendList ({ friends }) {
                     return (
                         <>
                             {<FriendListItem
+                                id={friend.id}
                                 avatar={friend.avatar}
                                 name={friend.name}
                                 isOnline={friend.isOnline} />}
@@ -27,6 +28,7 @@ FriendList.propTypes = {
             avatar: PropTypes.string.isRequired,
             name: PropTypes.string.isRequired,
             isOnline: PropTypes.bool.isRequired,
+            id: PropTypes.number.isRequired,
         })
     )
 };
