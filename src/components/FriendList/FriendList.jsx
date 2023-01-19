@@ -10,7 +10,7 @@ export default function FriendList ({ friends }) {
                     return (
                         <>
                             {<FriendListItem
-                                id={friend.id}
+                                key={friend.id}
                                 avatar={friend.avatar}
                                 name={friend.name}
                                 isOnline={friend.isOnline} />}
