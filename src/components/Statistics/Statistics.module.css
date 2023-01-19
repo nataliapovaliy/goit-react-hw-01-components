@@ -33,6 +33,10 @@
   align-items: center;
 }
 
+.item:not(:last-child) {
+  border-right: 1px solid turquoise;
+}
+
 .percentage {
   font-size: 22px;
 }
